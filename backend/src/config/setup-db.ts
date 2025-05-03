@@ -11,7 +11,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 800,
     rating: 4.8,
     recommendations: 120,
-    profile_image: '/images/doctors/pexels-mastercowley-1300402.jpg', // Male
+    profile_image: '/images/doctors/pexels-mastercowley-1300402.jpg',
     consultation_modes: [
       { id: '1', name: 'Online' },
       { id: '2', name: 'Hospital Visit' }
@@ -33,7 +33,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 700,
     rating: 4.6,
     recommendations: 98,
-    profile_image: '/images/doctors/pexels-danxavier-1239291.jpg', // Female
+    profile_image: '/images/doctors/pexels-danxavier-1239291.jpg', 
     consultation_modes: [
       { id: '1', name: 'Online' }
     ],
@@ -54,7 +54,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 650,
     rating: 4.7,
     recommendations: 85,
-    profile_image: '/images/doctors/pexels-pixabay-415829.jpg', // Female
+    profile_image: '/images/doctors/pexels-pixabay-415829.jpg', 
     consultation_modes: [
       { id: '1', name: 'Online' },
       { id: '2', name: 'Hospital Visit' }
@@ -78,7 +78,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 750,
     rating: 4.9,
     recommendations: 150,
-    profile_image: '/images/doctors/pexels-kebs-visuals-742415-3992656.jpg', // Female
+    profile_image: '/images/doctors/pexels-kebs-visuals-742415-3992656.jpg', 
     consultation_modes: [
       { id: '1', name: 'Online' }
     ],
@@ -99,7 +99,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 900,
     rating: 4.9,
     recommendations: 200,
-    profile_image: '/images/doctors/pexels-simon-robben-55958-614810.jpg', // Male
+    profile_image: '/images/doctors/pexels-simon-robben-55958-614810.jpg',
     consultation_modes: [
       { id: '1', name: 'Online' },
       { id: '2', name: 'Hospital Visit' }
@@ -122,7 +122,7 @@ const sampleDoctors: DoctorInput[] = [
     fees: 850,
     rating: 4.7,
     recommendations: 110,
-    profile_image: '/images/doctors/pexels-stefanstefancik-91227.jpg', // Male
+    profile_image: '/images/doctors/pexels-stefanstefancik-91227.jpg', 
     consultation_modes: [
       { id: '1', name: 'Online' },
       { id: '2', name: 'Hospital Visit' }
