@@ -1,0 +1,29 @@
+{
+  "name": "apollo-247-clone",
+  "version": "1.0.0",
+  "description": "Apollo 247 Clone Assignment Project",
+  "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "setup-db": "cd backend && npm run setup-db",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  },
+  "keywords": [
+    "nextjs",
+    "express",
+    "mysql",
+    "apollo247",
+    "clone"
+  ],
+  "author": "Happy",
+  "license": "None since only for Assignment Submission",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
