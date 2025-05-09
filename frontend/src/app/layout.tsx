@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://apollo-clone-23w1.onrender.com:3000"),
   title: "Apollo 247 Clone - Book Doctor Appointments Online",
   description: "Book doctor appointments online, consult with specialists, and get healthcare services with Apollo 247 Clone.",
   icons: {
