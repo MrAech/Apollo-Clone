@@ -71,5 +71,5 @@ if (process.env.NODE_ENV === 'production') {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
-  console.log(`Access the application at http://<your-domain>:${PORT} or the deployed URL`);
+  console.log(`Access the application at the deployed URL`);
 });
