@@ -65,7 +65,7 @@ const DoctorList = ({ filters, onFilterChange }: DoctorListProps) => {
         if (filters.page) queryParams.set('page', filters.page.toString());
 queryParams.set('limit', '5');
         
-        const response = await axios.get(`http://localhost:5000/api/doctors?${queryParams.toString()}`);
+        const response = await axios.get(`https://apollo-clone-23w1.onrender.com/api/doctors?${queryParams.toString()}`);
         setDoctors(response.data.data.doctors);
         setPagination(response.data.data.pagination);
       } catch (err) {
