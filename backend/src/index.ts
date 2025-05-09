@@ -9,7 +9,8 @@ dotenv.config();
 
 
 const app: Express = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT) : 5000;
+
 
 app.use(cors({
   origin: ['https://apollo-clone-23w1.onrender.com', 'http://localhost:3000'],
@@ -35,6 +36,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
