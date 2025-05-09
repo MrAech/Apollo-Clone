@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Header from '../../../components/layout/Header';
 import FilterPanel from '../../../components/filters/FilterPanel';
