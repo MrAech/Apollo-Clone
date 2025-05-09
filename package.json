@@ -13,8 +13,8 @@
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "postinstall": "npm --prefix ./frontend install && npm --prefix ./backend install",
     "build": "npm --prefix ./frontend run build && npm --prefix ./backend run build",
-    "start": "concurrently \"npm --prefix ./backend start\" \"npm --prefix ./frontend start\"",
-    "deploy": "npm run build && npm run start"
+    "start": "npm run build && cross-env NODE_ENV=production npm --prefix ./backend start",
+    "start:prod": "cross-env NODE_ENV=production npm --prefix ./backend start"
   },
   "keywords": [
     "nextjs",
@@ -24,8 +24,8 @@
     "clone"
   ],
   "author": "Happy",
-  "license": "None since only for Assignment Submission",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+  "license": "None since only for Assignment Submission",  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
   }
 }

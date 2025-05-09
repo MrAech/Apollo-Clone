@@ -61,11 +61,11 @@ const DoctorList = ({ filters, onFilterChange }: DoctorListProps) => {
         if (filters.feesMax !== undefined) queryParams.set('feesMax', filters.feesMax.toString());
         if (filters.languageIds?.length) queryParams.set('languageIds', filters.languageIds.join(','));
         if (filters.facilityIds?.length) queryParams.set('facilityIds', filters.facilityIds.join(','));
-        if (filters.sortBy) queryParams.set('sortBy', filters.sortBy);
+        if (filters.sortBy) queryParams.set('sortBy', filters.sortBy);        
         if (filters.page) queryParams.set('page', filters.page.toString());
-queryParams.set('limit', '5');
+        queryParams.set('limit', '5');
         
-        const response = await axios.get(`https://apollo-clone-23w1.onrender.com/api/doctors?${queryParams.toString()}`);
+        const response = await axios.get(`/api/doctors?${queryParams.toString()}`);
         setDoctors(response.data.data.doctors);
         setPagination(response.data.data.pagination);
       } catch (err) {
