@@ -22,10 +22,11 @@
     "mysql",
     "apollo247",
     "clone"
-  ],
-  "author": "Happy",
-  "license": "None since only for Assignment Submission",  "devDependencies": {
+  ],  "author": "Happy",
+  "license": "None since only for Assignment Submission",
+  "dependencies": {
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3"
-  }
+  },
+  "devDependencies": {}
 }
